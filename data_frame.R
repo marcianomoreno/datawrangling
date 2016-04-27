@@ -36,8 +36,8 @@ df[,c(1,3,5)]
 
 # Filtrado de renglones
 df[which(df$Species=="setosa"),]
-df[which(df$Sepal.Length>3.0 & df$Species == "setosa"),] # CUIDADO: Con el operador & solo se evalua el primer elemento del vector
-df[which(df$Sepal.Length>3.0 && df$Species == "setosa"),] # OK:Con el operador && se evaluan todos los elementos del vector
+df[which(df$Sepal.Length>3.0 & df$Species == "setosa"),] # OK: Con el operador & se evaluan todos los elementos del vector
+df[which(df$Sepal.Length>3.0 && df$Species == "setosa"),] # CUIDADO:Con el operador & solo se evalua el primer elemento del vector
 
 # Agrupación y cálculo de agregados
 aggregate(df[,1:4], by = list(df$Species), mean)

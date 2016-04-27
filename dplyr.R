@@ -19,7 +19,7 @@ head(flights)
 tail(flights)
 dim(flights)
 names(flights)
-class(flights) # Identificar las clases de las que hereda este objeto
+class(ref_flights) # Identificar las clases de las que hereda este objeto
 
 # Acceso a elementos del tbl
 flights[1] # Primera columna
